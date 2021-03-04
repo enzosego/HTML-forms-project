@@ -1,0 +1,243 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ededed;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #2571B0;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 0.76rem;
+}
+@media (max-width: 767px) {
+  header {
+    display: none;
+  }
+}
+header .sign-in-questions {
+  margin-right: 9px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+header .sign-in-questions p {
+  padding-right: 0;
+  margin-bottom: 3px;
+  color: #414141;
+}
+header .sign-in-questions a {
+  padding-right: 0;
+}
+header button {
+  margin-right: 45px;
+  padding: 5px 17px;
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  font-size: 0.8rem;
+  color: white;
+  background: #287BBD;
+  border: 1px solid black;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+}
+header button p {
+  margin-bottom: 5px;
+  margin-left: 5px;
+  color: inherit;
+}
+header button i {
+  margin-right: 5px;
+  font-size: 1.2rem;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .logos {
+  width: 50%;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .logos .intuit-logo {
+  height: 34px;
+  width: 115px;
+  background-image: url("images/intuit-logo.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main .logos .additional-logos {
+  display: flex;
+  flex-direction: row;
+  margin-top: 25px;
+}
+main .logos .additional-logos a {
+  display: flex;
+  text-decoration: none;
+}
+main .logos .additional-logos .mint-logo {
+  width: 24px;
+  height: 24px;
+  background: red;
+  background-image: url("images/mint-logo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+main .logos .additional-logos .quickbooks-logo {
+  height: 24px;
+  width: 24px;
+}
+main .logos .additional-logos .turbotax-logo {
+  height: 23px;
+  width: 23px;
+}
+main .logos .additional-logos p {
+  margin-left: 3px;
+  margin-right: 10px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #878787;
+}
+main .form-container {
+  width: 380px;
+  margin-bottom: 20px;
+  margin-top: 19px;
+  background: #fff;
+  border: 1px solid #c8c8c8;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #414141;
+}
+main .form-container .form-title {
+  margin-top: 28px;
+  font-weight: 500;
+}
+main .form-container .form-subtitle {
+  font-size: 0.88rem;
+  margin-top: 20px;
+}
+main .form-container .first-anchor {
+  font-size: 0.88rem;
+}
+main .form-container form {
+  width: 85%;
+}
+main .form-container form label {
+  padding-top: 10px;
+}
+main .form-container form label p {
+  font-size: 0.88rem;
+  margin-top: 20px;
+}
+main .form-container form label input {
+  margin-top: 10px;
+  width: 100%;
+  font-family: inherit;
+  font-size: 1.1rem;
+  padding: 5px 7px;
+  border: 1px solid #c8c8c8;
+  border-radius: 3px;
+  outline: none;
+}
+main .form-container form label input:focus {
+  box-shadow: 0 0 5px 1px #85BAE5;
+  border: 1px solid #74B0E1;
+}
+main .form-container form label .below-phone-input {
+  margin-top: 6px;
+  font-size: 0.67rem;
+}
+main .form-container form button {
+  margin-top: 30px;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background: #2B7CB9;
+  color: white;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 1em;
+  box-shadow: 0 1px #3c3c3c;
+}
+main .form-container form button i {
+  margin-right: 10px;
+}
+main .form-container .terms-agree {
+  margin-top: 20px;
+  text-align: center;
+  width: 85%;
+  font-size: 0.8rem;
+  color: #737373;
+}
+main .form-container .captcha-alert {
+  width: 100%;
+  height: 50px;
+  margin-top: 25px;
+  margin-bottom: 0;
+  background: #ededed;
+  font-size: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #969696;
+}
+main footer {
+  margin-bottom: 50px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.78rem;
+  color: #505050;
+}
+main footer a {
+  margin: auto 7px;
+  color: inherit;
+}
+main footer p {
+  text-align: center;
+}
+
+.page-footer {
+  height: 60px;
+  width: 100%;
+  background: white;
+  display: flex;
+  align-items: center;
+}
+.page-footer a {
+  margin-left: 20px;
+  font-size: 0.9rem;
+}
+
+/*# sourceMappingURL=style.css.map */
